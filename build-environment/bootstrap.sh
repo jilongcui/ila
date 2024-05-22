@@ -46,14 +46,15 @@ EOF
 apt-get update
 apt-get install -y $PACKAGES
 
-pip2 install $PYTHON2_PACKAGES
-pip2 install pycairo-1.15.4.tar.gz
+pip2 install -i https://pypi.tuna.tsinghua.edu.cn/simple $PYTHON2_PACKAGES
+pip2 install -i https://pypi.tuna.tsinghua.edu.cn/simple pycairo-1.15.4.tar.gz
 
-pip3 install $PYTHON3_PACKAGES
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple $PYTHON3_PACKAGES
 
 # Patched inkscape
 dpkg -i inkscape-patched_0.92.3-1_amd64.deb
 
+gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/
 gem install compass
 
 # Apache

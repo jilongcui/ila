@@ -15,7 +15,7 @@ Overview:
 
 First decide where you want to put all the files.  I have my files in `~/projects/`.  Change to that directory and run:
 ```
-~/projects$ git clone https://github.com/QBobWatson/ila.git
+~/projects$ git clone https://github.com/jilongcui/ila.git
 ~/projects$ cd ila
 ~/projects/ila$ git submodule update --init --recursive
 ```
